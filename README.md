@@ -2,6 +2,8 @@
 
 A Chrome extension that creates an interactive overlay for web content analysis and display. The extension processes webpage content and categorizes text into different sections while providing video playback controls.
 
+Try it out here - https://chromewebstore.google.com/detail/web-2-brainrot/plimemogopfdmlfejdfbmldjaipihafa :) 
+
 ## Project Structure
 
 ### Main Files
