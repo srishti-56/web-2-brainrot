@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <div id="video-container">
+        <!-- <button id="closeOverlay">✕</button> -->
+        <video id="brainrot-video" controls autoplay loop>
+            <source src="assets/minecraft-gameplay.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="text-overlay"></div>
+        <div id="controls">
+            <div id="interaction-buttons">
+                <button id="play-pause"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="contentAnalyzer.js"></script>
+    <script src="overlay.js"></script>
+</body>
+</html>

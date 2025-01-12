@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Web2Brainrot",
+  "version": "1.0.1",
+  "description": "Transform web content into sigma content - no cap. An oddly satisfying browsing experience.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
+      "48": "assets/48.png",
+      "128": "assets/128.png"
+    },
+    "default_title": "it's giving brainrot"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "type": "module"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "overlay.html",
+        "*.js",
+        "*.css",
+        "assets/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "48": "assets/48.png",
+    "128": "assets/128.png"
+  }
+}
